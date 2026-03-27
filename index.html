@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanessa Flores | Cybersecurity Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e5e7eb;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+    .hero, .section {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #111827 0%, #0f172a 100%);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 48px;
+      margin: 0 0 10px 0;
+      color: #f9fafb;
+    }
+    h2 {
+      margin-top: 0;
+      color: #f9fafb;
+    }
+    .name {
+      font-size: 32px;
+      margin: 0 0 6px 0;
+      color: #e5e7eb;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #93c5fd;
+      margin-bottom: 18px;
+    }
+    .small-heading {
+      color: #67e8f9;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    .chip {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid #334155;
+      background: #0f172a;
+      margin: 6px 8px 0 0;
+      font-size: 14px;
+    }
+    .project-card {
+      background: #0f172a;
+      border: 1px solid #243041;
+      border-radius: 16px;
+      padding: 22px;
+      margin-top: 16px;
+    }
+    a.button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: bold;
+      margin: 6px;
+    }
+    .primary {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+    .secondary {
+      border: 1px solid #334155;
+      color: #e5e7eb;
+    }
+    ul {
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Cybersecurity Portfolio</h1>
+      <div class="name">Vanessa Flores</div>
+      <div class="subtitle">BBA in Cybersecurity · The University of Texas at San Antonio</div>
+      <p style="line-height:1.7; max-width:780px; margin: 0 auto; color:#d1d5db;">
+        I am a cybersecurity student with hands-on experience in network traffic analysis,
+        vulnerability testing, Linux-based security tooling, and practical lab investigation.
+        My work focuses on building technical skill through projects, simulations, and clear
+        professional documentation.
+      </p>
+      <div style="margin-top:22px;">
+        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button secondary" href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="small-heading">About</div>
+      <h2>Who I Am</h2>
+      <p style="line-height:1.7; color:#d1d5db;">
+        I am currently completing my BBA in Cybersecurity at UTSA and have focused my coursework
+        on hands-on technical learning, practical investigations, and polished reporting. I am
+        especially interested in security operations, threat detection, vulnerability analysis,
+        and defensive security work.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="small-heading">Skills</div>
+      <h2>Tools and Technical Areas</h2>
+      <span class="chip">Wireshark</span>
+      <span class="chip">Nmap</span>
+      <span class="chip">Burp Suite</span>
+      <span class="chip">SNORT</span>
+      <span class="chip">NetworkMiner</span>
+      <span class="chip">curl</span>
+      <span class="chip">Kali Linux</span>
+      <span class="chip">Ubuntu Linux</span>
+      <span class="chip">VMware Workstation</span>
+      <span class="chip">Packet Analysis</span>
+      <span class="chip">Web Security Testing</span>
+      <span class="chip">IoT Security</span>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="small-heading">Projects</div>
+      <h2>Featured Work</h2>
+
+      <div class="project-card">
+        <h3>Smart TV Local Network API Security Project</h3>
+        <p style="color:#d1d5db; line-height:1.7;">
+          Hands-on IoT security project focused on identifying and testing local API behavior
+          for a smart television in a controlled lab environment.
+        </p>
+        <ul style="color:#d1d5db;">
+          <li>Configured a Linux virtual machine in bridged mode for local network testing</li>
+          <li>Used Nmap to discover hosts and identify relevant services</li>
+          <li>Performed API connectivity testing with curl and documented authentication behavior</li>
+          <li>Produced structured milestone reports with screenshots and technical analysis</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Network Forensics PCAP Analysis</h3>
+        <p style="color:#d1d5db; line-height:1.7;">
+          Packet capture analysis project using Wireshark and related tools to identify hosts,
+          traffic patterns, and investigative findings.
+        </p>
+        <ul style="color:#d1d5db;">
+          <li>Reviewed endpoint statistics and protocol behavior in packet captures</li>
+          <li>Identified significant host activity and suspicious traffic patterns</li>
+          <li>Used multiple tools to support findings and confirm observations</li>
+          <li>Documented investigative methodology and results in formal lab reports</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>SQL Injection Web Application Testing Lab</h3>
+        <p style="color:#d1d5db; line-height:1.7;">
+          Controlled lab work demonstrating how weak input validation can lead to SQL injection
+          vulnerabilities in web applications.
+        </p>
+        <ul style="color:#d1d5db;">
+          <li>Tested intentionally vulnerable applications for SQL injection behavior</li>
+          <li>Observed authentication bypass and data extraction through crafted input</li>
+          <li>Explained the impact of insecure coding practices on application security</li>
+          <li>Summarized findings in a professional lab report format</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="small-heading">Contact</div>
+      <h2>Let’s Connect</h2>
+      <ul style="color:#d1d5db; line-height:1.8;">
+        <li>LinkedIn: add your link</li>
+        <li>GitHub: add your username</li>
+        <li>Email: add your professional email</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
