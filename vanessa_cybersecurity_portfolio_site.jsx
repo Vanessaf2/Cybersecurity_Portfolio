@@ -1,41 +1,152 @@
 export default function PortfolioSite() {
+  const page = {
+    minHeight: "100vh",
+    background: "#0b1020",
+    color: "#e5e7eb",
+    fontFamily: "Arial, sans-serif"
+  };
+
+  const container = {
+    maxWidth: "1100px",
+    margin: "0 auto",
+    padding: "32px 20px"
+  };
+
+  const hero = {
+    background: "linear-gradient(135deg, #111827 0%, #0f172a 100%)",
+    border: "1px solid #1f2937",
+    borderRadius: "20px",
+    padding: "40px",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
+    marginBottom: "24px",
+    textAlign: "center"
+  };
+
+  const section = {
+    background: "#111827",
+    border: "1px solid #1f2937",
+    borderRadius: "18px",
+    padding: "28px",
+    boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
+    marginBottom: "24px"
+  };
+
+  const title = {
+    fontSize: "48px",
+    margin: "0 0 10px 0",
+    color: "#f9fafb",
+    fontWeight: "bold"
+  };
+
+  const nameStyle = {
+    fontSize: "32px",
+    margin: "0 0 6px 0",
+    color: "#e5e7eb"
+  };
+
+  const subtitle = {
+    fontSize: "18px",
+    color: "#93c5fd",
+    marginBottom: "18px"
+  };
+
+  const buttonRow = {
+    display: "flex",
+    gap: "12px",
+    flexWrap: "wrap",
+    marginTop: "22px"
+  };
+
+  const primaryBtn = {
+    display: "inline-block",
+    background: "#38bdf8",
+    color: "#0f172a",
+    textDecoration: "none",
+    padding: "12px 18px",
+    borderRadius: "12px",
+    fontWeight: "bold"
+  };
+
+  const secondaryBtn = {
+    display: "inline-block",
+    background: "transparent",
+    color: "#e5e7eb",
+    textDecoration: "none",
+    padding: "12px 18px",
+    borderRadius: "12px",
+    border: "1px solid #334155",
+    fontWeight: "bold"
+  };
+
+  const grid = {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+    gap: "12px"
+  };
+
+  const chip = {
+    display: "inline-block",
+    padding: "8px 12px",
+    borderRadius: "999px",
+    border: "1px solid #334155",
+    background: "#0f172a",
+    margin: "6px 8px 0 0",
+    fontSize: "14px"
+  };
+
+  const projectCard = {
+    background: "#0f172a",
+    border: "1px solid #243041",
+    borderRadius: "16px",
+    padding: "22px",
+    marginTop: "16px"
+  };
+
+  const smallHeading = {
+    color: "#67e8f9",
+    textTransform: "uppercase",
+    letterSpacing: "1px",
+    fontSize: "12px",
+    marginBottom: "8px"
+  };
+
   const projects = [
     {
       title: "Smart TV Local Network API Security Project",
       description:
         "Hands-on IoT security project focused on identifying and testing local API behavior for a smart television in a controlled lab environment.",
       bullets: [
-        "Configured a Linux virtual machine in bridged mode for local network communication testing",
-        "Used Nmap to discover hosts and identify relevant services during enumeration",
+        "Configured a Linux virtual machine in bridged mode for local network testing",
+        "Used Nmap to discover hosts and identify relevant services",
         "Performed API connectivity testing with curl and documented authentication behavior",
-        "Produced structured milestone reports with screenshots and technical analysis",
+        "Produced structured milestone reports with screenshots and technical analysis"
       ],
-      tools: ["Nmap", "curl", "Ubuntu/Kali Linux", "VMware Workstation"],
+      tools: ["Nmap", "curl", "Ubuntu/Kali Linux", "VMware Workstation"]
     },
     {
       title: "Network Forensics PCAP Analysis",
       description:
         "Packet capture analysis project using Wireshark and related tools to identify hosts, traffic patterns, and investigative findings.",
       bullets: [
-        "Reviewed endpoint statistics, protocol behavior, and conversations in packet captures",
-        "Identified significant internal host activity and suspicious traffic patterns",
+        "Reviewed endpoint statistics and protocol behavior in packet captures",
+        "Identified significant host activity and suspicious traffic patterns",
         "Used multiple tools to support findings and confirm observations",
-        "Documented investigative methodology and results in formal lab reports",
+        "Documented investigative methodology and results in formal lab reports"
       ],
-      tools: ["Wireshark", "NetworkMiner", "SNORT"],
+      tools: ["Wireshark", "NetworkMiner", "SNORT"]
     },
     {
       title: "SQL Injection Web Application Testing Lab",
       description:
         "Controlled lab work demonstrating how weak input validation can lead to SQL injection vulnerabilities in web applications.",
       bullets: [
-        "Tested intentionally vulnerable web applications for SQL injection behavior",
+        "Tested intentionally vulnerable applications for SQL injection behavior",
         "Observed authentication bypass and data extraction through crafted input",
         "Explained the impact of insecure coding practices on application security",
-        "Summarized findings in a professional lab report format",
+        "Summarized findings in a professional lab report format"
       ],
-      tools: ["DVWA", "Mutillidae", "Browser Testing", "SQL Payloads"],
-    },
+      tools: ["DVWA", "Mutillidae", "Browser Testing", "SQL Payloads"]
+    }
   ];
 
   const skills = [
@@ -50,206 +161,130 @@ export default function PortfolioSite() {
     "VMware Workstation",
     "Packet Analysis",
     "Web Security Testing",
-    "IoT Security",
+    "IoT Security"
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <section className="border-b border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-24">
-          <div className="grid gap-10 md:grid-cols-[1.4fr_.8fr] md:items-center">
-            <div>
-              <p className="mb-4 inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm tracking-wide text-cyan-200">
-                Cybersecurity Portfolio
-              </p>
-              <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-                Vanessa Flores
-              </h1>
-              <p className="mt-3 text-lg text-slate-300 md:text-xl">
-                BBA in Cybersecurity · The University of Texas at San Antonio
-              </p>
-              <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
-                I am a cybersecurity student with hands-on experience in network
-                traffic analysis, vulnerability testing, Linux-based security
-                tooling, and practical lab investigation. My work focuses on
-                building technical skill through projects, simulations, and clear
-                professional documentation.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="#projects"
-                  className="rounded-2xl bg-cyan-400 px-5 py-3 font-medium text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:-translate-y-0.5"
-                >
-                  View Projects
-                </a>
-                <a
-                  href="#github"
-                  className="rounded-2xl border border-slate-700 px-5 py-3 font-medium text-slate-100 transition hover:border-slate-500 hover:bg-slate-900"
-                >
-                  GitHub Setup
-                </a>
-              </div>
-            </div>
+    <div style={page}>
+      <div style={container}>
+        <section style={hero}>
+          <h1 style={title}>Cybersecurity Portfolio</h1>
+          <h2 style={nameStyle}>Vanessa Flores</h2>
+          <div style={subtitle}>
+            BBA in Cybersecurity · The University of Texas at San Antonio
+          </div>
+          <p style={{ lineHeight: 1.7, maxWidth: "780px", color: "#d1d5db" }}>
+            I am a cybersecurity student with hands-on experience in network traffic
+            analysis, vulnerability testing, Linux-based security tooling, and practical
+            lab investigation. My work focuses on building technical skill through
+            projects, simulations, and clear professional documentation.
+          </p>
+          <div style={buttonRow}>
+            <a href="#projects" style={primaryBtn}>View Projects</a>
+            <a href="#contact" style={secondaryBtn}>Contact</a>
+          </div>
+        </section>
 
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-2xl">
-              <h2 className="text-xl font-semibold">Focus Areas</h2>
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                {[
-                  "Threat Investigation",
-                  "Network Security",
-                  "IoT Security",
-                  "Web Application Testing",
-                  "Security Operations",
-                  "Technical Reporting",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3 text-sm text-slate-200"
-                  >
-                    {item}
-                  </div>
+        <section style={section}>
+          <div style={smallHeading}>About</div>
+          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Who I Am</h2>
+          <p style={{ lineHeight: 1.7, color: "#d1d5db" }}>
+            I am currently completing my BBA in Cybersecurity at UTSA and have focused
+            my coursework on hands-on technical learning, practical investigations, and
+            polished reporting. I am especially interested in security operations,
+            threat detection, vulnerability analysis, and defensive security work.
+          </p>
+        </section>
+
+        <section style={section}>
+          <div style={smallHeading}>Skills</div>
+          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Tools and Technical Areas</h2>
+          <div>
+            {skills.map((skill) => (
+              <span key={skill} style={chip}>{skill}</span>
+            ))}
+          </div>
+        </section>
+
+        <section id="projects" style={section}>
+          <div style={smallHeading}>Projects</div>
+          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Featured Work</h2>
+          {projects.map((project) => (
+            <div key={project.title} style={projectCard}>
+              <h3 style={{ marginTop: 0, color: "#f8fafc" }}>{project.title}</h3>
+              <p style={{ color: "#d1d5db", lineHeight: 1.7 }}>{project.description}</p>
+              <ul style={{ color: "#d1d5db", lineHeight: 1.7, paddingLeft: "20px" }}>
+                {project.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+              <div style={{ marginTop: "10px" }}>
+                {project.tools.map((tool) => (
+                  <span key={tool} style={chip}>{tool}</span>
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="md:col-span-1">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-              About
-            </p>
-            <h2 className="mt-2 text-3xl font-bold">Who I Am</h2>
-          </div>
-          <div className="md:col-span-2 rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-xl">
-            <p className="leading-7 text-slate-300">
-              I am currently completing my BBA in Cybersecurity at UTSA and have
-              focused my coursework on hands-on technical learning, practical
-              investigations, and polished reporting. I am especially interested
-              in security operations, threat detection, vulnerability analysis,
-              and defensive security work where I can apply both technical and
-              analytical skills.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" className="mx-auto max-w-6xl px-6 py-6">
-        <div className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-xl">
-          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-                Skills
-              </p>
-              <h2 className="mt-2 text-3xl font-bold">Tools and Technical Areas</h2>
-            </div>
-          </div>
-          <div className="mt-6 flex flex-wrap gap-3">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="rounded-full border border-slate-700 bg-slate-950 px-4 py-2 text-sm text-slate-200"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="mb-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-            Projects
-          </p>
-          <h2 className="mt-2 text-3xl font-bold">Featured Work</h2>
-        </div>
-        <div className="grid gap-6">
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-xl"
-            >
-              <div className="grid gap-6 md:grid-cols-[1.2fr_.8fr]">
-                <div>
-                  <h3 className="text-2xl font-semibold">{project.title}</h3>
-                  <p className="mt-3 leading-7 text-slate-300">
-                    {project.description}
-                  </p>
-                  <ul className="mt-5 space-y-3 text-slate-300">
-                    {project.bullets.map((bullet) => (
-                      <li key={bullet} className="flex gap-3">
-                        <span className="mt-1 h-2 w-2 rounded-full bg-cyan-300" />
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="rounded-2xl border border-slate-800 bg-slate-950 p-5">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-                    Tools Used
-                  </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {project.tools.map((tool) => (
-                      <span
-                        key={tool}
-                        className="rounded-full border border-slate-700 px-3 py-1.5 text-sm text-slate-200"
-                      >
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
           ))}
-        </div>
-      </section>
+        </section>
 
-      <section id="github" className="mx-auto max-w-6xl px-6 pb-16">
-        <div className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-            GitHub
-          </p>
-          <h2 className="mt-2 text-3xl font-bold">Suggested Repository Setup</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <section style={section}>
+          <div style={smallHeading}>GitHub</div>
+          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Suggested Repository Setup</h2>
+          <div style={grid}>
             {[
               "smart-tv-api-security-project",
               "pcap-analysis-labs",
               "sql-injection-security-lab",
-              "cybersecurity-portfolio",
+              "cybersecurity-portfolio"
             ].map((repo) => (
               <div
                 key={repo}
-                className="rounded-2xl border border-slate-800 bg-slate-950 p-5"
+                style={{
+                  background: "#0f172a",
+                  border: "1px solid #243041",
+                  borderRadius: "14px",
+                  padding: "16px",
+                  fontFamily: "monospace",
+                  color: "#bae6fd"
+                }}
               >
-                <p className="font-mono text-sm text-cyan-200">{repo}</p>
+                {repo}
               </div>
             ))}
           </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-800 bg-slate-950 p-6">
-              <h3 className="text-xl font-semibold">What to Upload</h3>
-              <ul className="mt-4 space-y-3 text-slate-300">
-                <li>README files for each project</li>
-                <li>Sanitized screenshots</li>
-                <li>Diagrams and milestone visuals</li>
-                <li>Short write-ups and lessons learned</li>
-              </ul>
+        </section>
+
+        <section id="contact" style={section}>
+          <div style={smallHeading}>Contact</div>
+          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Let’s Connect</h2>
+          <p style={{ color: "#d1d5db", lineHeight: 1.7 }}>
+            Feel free to reach out or connect with me below.
+          </p>
+
+          <div style={{ marginTop: "12px", lineHeight: 2 }}>
+            <div>
+              📧 Email: 
+              <a href="mailto:Vanessa.flores2@my.utsa.edu" style={{ color: "#38bdf8", textDecoration: "none" }}>
+                Vanessa.flores2@my.utsa.edu
+              </a>
             </div>
-            <div className="rounded-2xl border border-slate-800 bg-slate-950 p-6">
-              <h3 className="text-xl font-semibold">Best First Pinned Repo</h3>
-              <p className="mt-4 text-slate-300 leading-7">
-                Start by pinning your Smart TV project. It is unique, hands-on,
-                and shows practical skills in IoT security, network enumeration,
-                Linux tooling, and technical documentation.
-              </p>
+
+            <div>
+              💼 LinkedIn: 
+              <a href="https://linkedin.com/in/vanessaflores2" target="_blank" style={{ color: "#38bdf8", textDecoration: "none" }}>
+                linkedin.com/in/vanessaflores2
+              </a>
+            </div>
+
+            <div>
+              💻 GitHub: 
+              <a href="https://github.com/Vanessaf2" target="_blank" style={{ color: "#38bdf8", textDecoration: "none" }}>
+                github.com/Vanessaf2
+              </a>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
