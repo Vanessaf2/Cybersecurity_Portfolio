@@ -3,13 +3,13 @@ export default function PortfolioSite() {
     minHeight: "100vh",
     background: "#0b1020",
     color: "#e5e7eb",
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Arial, sans-serif"
   };
 
   const container = {
     maxWidth: "1100px",
     margin: "0 auto",
-    padding: "32px 20px",
+    padding: "32px 20px"
   };
 
   const hero = {
@@ -19,7 +19,7 @@ export default function PortfolioSite() {
     padding: "40px",
     boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
     marginBottom: "24px",
-    textAlign: "center",
+    textAlign: "center"
   };
 
   const section = {
@@ -28,33 +28,33 @@ export default function PortfolioSite() {
     borderRadius: "18px",
     padding: "28px",
     boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-    marginBottom: "24px",
+    marginBottom: "24px"
   };
 
   const title = {
     fontSize: "48px",
     margin: "0 0 10px 0",
     color: "#f9fafb",
-    fontWeight: "bold",
+    fontWeight: "bold"
   };
 
   const nameStyle = {
     fontSize: "32px",
     margin: "0 0 6px 0",
-    color: "#e5e7eb",
+    color: "#e5e7eb"
   };
 
   const subtitle = {
     fontSize: "18px",
     color: "#93c5fd",
-    marginBottom: "18px",
+    marginBottom: "18px"
   };
 
   const buttonRow = {
     display: "flex",
     gap: "12px",
     flexWrap: "wrap",
-    marginTop: "22px",
+    marginTop: "22px"
   };
 
   const primaryBtn = {
@@ -64,7 +64,7 @@ export default function PortfolioSite() {
     textDecoration: "none",
     padding: "12px 18px",
     borderRadius: "12px",
-    fontWeight: "bold",
+    fontWeight: "bold"
   };
 
   const secondaryBtn = {
@@ -75,13 +75,13 @@ export default function PortfolioSite() {
     padding: "12px 18px",
     borderRadius: "12px",
     border: "1px solid #334155",
-    fontWeight: "bold",
+    fontWeight: "bold"
   };
 
   const grid = {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-    gap: "12px",
+    gap: "12px"
   };
 
   const chip = {
@@ -91,7 +91,7 @@ export default function PortfolioSite() {
     border: "1px solid #334155",
     background: "#0f172a",
     margin: "6px 8px 0 0",
-    fontSize: "14px",
+    fontSize: "14px"
   };
 
   const projectCard = {
@@ -99,7 +99,7 @@ export default function PortfolioSite() {
     border: "1px solid #243041",
     borderRadius: "16px",
     padding: "22px",
-    marginTop: "16px",
+    marginTop: "16px"
   };
 
   const smallHeading = {
@@ -107,7 +107,7 @@ export default function PortfolioSite() {
     textTransform: "uppercase",
     letterSpacing: "1px",
     fontSize: "12px",
-    marginBottom: "8px",
+    marginBottom: "8px"
   };
 
   const projects = [
@@ -119,9 +119,9 @@ export default function PortfolioSite() {
         "Configured a Linux virtual machine in bridged mode for local network testing",
         "Used Nmap to discover hosts and identify relevant services",
         "Performed API connectivity testing with curl and documented authentication behavior",
-        "Produced structured milestone reports with screenshots and technical analysis",
+        "Produced structured milestone reports with screenshots and technical analysis"
       ],
-      tools: ["Nmap", "curl", "Ubuntu/Kali Linux", "VMware Workstation"],
+      tools: ["Nmap", "curl", "Ubuntu/Kali Linux", "VMware Workstation"]
     },
     {
       title: "Network Forensics PCAP Analysis",
@@ -131,9 +131,9 @@ export default function PortfolioSite() {
         "Reviewed endpoint statistics and protocol behavior in packet captures",
         "Identified significant host activity and suspicious traffic patterns",
         "Used multiple tools to support findings and confirm observations",
-        "Documented investigative methodology and results in formal lab reports",
+        "Documented investigative methodology and results in formal lab reports"
       ],
-      tools: ["Wireshark", "NetworkMiner", "SNORT"],
+      tools: ["Wireshark", "NetworkMiner", "SNORT"]
     },
     {
       title: "SQL Injection Web Application Testing Lab",
@@ -143,10 +143,10 @@ export default function PortfolioSite() {
         "Tested intentionally vulnerable applications for SQL injection behavior",
         "Observed authentication bypass and data extraction through crafted input",
         "Explained the impact of insecure coding practices on application security",
-        "Summarized findings in a professional lab report format",
+        "Summarized findings in a professional lab report format"
       ],
-      tools: ["DVWA", "Mutillidae", "Browser Testing", "SQL Payloads"],
-    },
+      tools: ["DVWA", "Mutillidae", "Browser Testing", "SQL Payloads"]
+    }
   ];
 
   const skills = [
@@ -161,7 +161,7 @@ export default function PortfolioSite() {
     "VMware Workstation",
     "Packet Analysis",
     "Web Security Testing",
-    "IoT Security",
+    "IoT Security"
   ];
 
   return (
@@ -174,19 +174,14 @@ export default function PortfolioSite() {
             BBA in Cybersecurity · The University of Texas at San Antonio
           </div>
           <p style={{ lineHeight: 1.7, maxWidth: "780px", color: "#d1d5db" }}>
-            I am a cybersecurity student with hands-on experience in network
-            traffic analysis, vulnerability testing, Linux-based security
-            tooling, and practical lab investigation. My work focuses on
-            building technical skill through projects, simulations, and clear
-            professional documentation.
+            I am a cybersecurity student with hands-on experience in network traffic
+            analysis, vulnerability testing, Linux-based security tooling, and practical
+            lab investigation. My work focuses on building technical skill through
+            projects, simulations, and clear professional documentation.
           </p>
           <div style={buttonRow}>
-            <a href="#projects" style={primaryBtn}>
-              View Projects
-            </a>
-            <a href="#contact" style={secondaryBtn}>
-              Contact
-            </a>
+            <a href="#projects" style={primaryBtn}>View Projects</a>
+            <a href="#contact" style={secondaryBtn}>Contact</a>
           </div>
         </section>
 
@@ -194,24 +189,19 @@ export default function PortfolioSite() {
           <div style={smallHeading}>About</div>
           <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Who I Am</h2>
           <p style={{ lineHeight: 1.7, color: "#d1d5db" }}>
-            I am currently completing my BBA in Cybersecurity at UTSA and have
-            focused my coursework on hands-on technical learning, practical
-            investigations, and polished reporting. I am especially interested
-            in security operations, threat detection, vulnerability analysis,
-            and defensive security work.
+            I am currently completing my BBA in Cybersecurity at UTSA and have focused
+            my coursework on hands-on technical learning, practical investigations, and
+            polished reporting. I am especially interested in security operations,
+            threat detection, vulnerability analysis, and defensive security work.
           </p>
         </section>
 
         <section style={section}>
           <div style={smallHeading}>Skills</div>
-          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>
-            Tools and Technical Areas
-          </h2>
+          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Tools and Technical Areas</h2>
           <div>
             {skills.map((skill) => (
-              <span key={skill} style={chip}>
-                {skill}
-              </span>
+              <span key={skill} style={chip}>{skill}</span>
             ))}
           </div>
         </section>
@@ -221,28 +211,16 @@ export default function PortfolioSite() {
           <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Featured Work</h2>
           {projects.map((project) => (
             <div key={project.title} style={projectCard}>
-              <h3 style={{ marginTop: 0, color: "#f8fafc" }}>
-                {project.title}
-              </h3>
-              <p style={{ color: "#d1d5db", lineHeight: 1.7 }}>
-                {project.description}
-              </p>
-              <ul
-                style={{
-                  color: "#d1d5db",
-                  lineHeight: 1.7,
-                  paddingLeft: "20px",
-                }}
-              >
+              <h3 style={{ marginTop: 0, color: "#f8fafc" }}>{project.title}</h3>
+              <p style={{ color: "#d1d5db", lineHeight: 1.7 }}>{project.description}</p>
+              <ul style={{ color: "#d1d5db", lineHeight: 1.7, paddingLeft: "20px" }}>
                 {project.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
                 ))}
               </ul>
               <div style={{ marginTop: "10px" }}>
                 {project.tools.map((tool) => (
-                  <span key={tool} style={chip}>
-                    {tool}
-                  </span>
+                  <span key={tool} style={chip}>{tool}</span>
                 ))}
               </div>
             </div>
@@ -251,15 +229,13 @@ export default function PortfolioSite() {
 
         <section style={section}>
           <div style={smallHeading}>GitHub</div>
-          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>
-            Suggested Repository Setup
-          </h2>
+          <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Suggested Repository Setup</h2>
           <div style={grid}>
             {[
               "smart-tv-api-security-project",
               "pcap-analysis-labs",
               "sql-injection-security-lab",
-              "cybersecurity-portfolio",
+              "cybersecurity-portfolio"
             ].map((repo) => (
               <div
                 key={repo}
@@ -269,7 +245,7 @@ export default function PortfolioSite() {
                   borderRadius: "14px",
                   padding: "16px",
                   fontFamily: "monospace",
-                  color: "#bae6fd",
+                  color: "#bae6fd"
                 }}
               >
                 {repo}
@@ -282,15 +258,12 @@ export default function PortfolioSite() {
           <div style={smallHeading}>Contact</div>
           <h2 style={{ marginTop: 0, color: "#f9fafb" }}>Let’s Connect</h2>
           <p style={{ color: "#d1d5db", lineHeight: 1.7 }}>
-            Add your LinkedIn URL, GitHub profile, and professional email here
-            before publishing.
+            Add your LinkedIn URL, GitHub profile, and professional email here before publishing.
           </p>
-          <ul
-            style={{ color: "#d1d5db", lineHeight: 1.8, paddingLeft: "20px" }}
-          >
-            <li>LinkedIn: add your link</li>
-            <li>GitHub: add your username</li>
-            <li>Email: add your professional email</li>
+          <ul style={{ color: "#d1d5db", lineHeight: 1.8, paddingLeft: "20px" }}>
+            <li>LinkedIn: Linkedin.com/in/vanessaflores2</li>
+            <li>GitHub: github.com/Vanessaf2</li>
+            <li>Email: Vanessa.flores2@my.utsa.edu</li>
           </ul>
         </section>
       </div>
